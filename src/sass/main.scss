@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Ubuntu|Material+Icon');
+@import '../../node_modules/materialize-css/sass/materialize.scss';
+
+/* VARIABLES */
+$color--primary: #F36416;
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+@media #{$small-and-down} {
+    
+    h1 {
+        color: #FFF;
+        font-size: 26 / 3.20 + vw;
+        text-align: center;
+        width: 250 / 3.20 + vw; 
+        margin: 10vh auto;
+    }
+
+    h2 {
+        color: #FFF;
+        font-size: 22 / 3.20 + vw;
+        text-align: center;
+        padding-top: 10vh;        
+    }
+
+    nav {
+        background-color: transparent;
+        box-shadow: none;
+
+
+        .brand-logo {
+            transform: none;
+            left: 15 / 3.20 + vw;
+            z-index: 10;
+        }
+    }
+    
+    #toast-container {
+        min-width: 50 / 3.20 + vw;
+        margin: 5 / 3.20 + vw;
+        text-align: center;
+    }
+
+    .background {
+        height: 144 / 3.20 + vw;
+    }
+
+    .box--first, .box--second, .box--third, .box--fourth, .box--fifth {
+        height: 100vh;
+    }
+
+    .box--first {
+        background-color: #2C2C2C;
+        background-image: url('../images/back.png');
+        background-repeat: no-repeat;
+        background-position: -40 / 3.20 + vw 62vh;
+        background-size: 400 / 3.20 + vw, 100 / 3.20 + vw;
+    }
+
+    .box--second {
+        background: $color--primary;
+    }
+
+    .box--third {
+        background: #FFF;
+    }
+
+    .box--fourth {
+        background-color: #2C2C2C;
+    }
+    
+    .box--fifth {
+        background: #FFF;
+        background-image: url('../images/footer.png');
+        background-repeat: no-repeat;
+        background-position: -40 / 3.20 + vw 62vh;
+        background-size: 400 / 3.20 + vw, 100 / 3.20 + vw;
+    }
+
+    .btn {
+        &:hover {
+            background-color: lighten($color: $color--primary, $amount: 5)
+        }
+    }
+
+    .btn-large {
+        background-color: $color--primary !important;
+        width: 290 / 3.20 + vw;
+    }
+
+    .container {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .links {
+
+        margin: 25vh auto;
+        li {
+            a {
+                font-size: 26 / 3.20 + vw;
+                color: #FFF;
+            }
+        }
+    }
+
+    .message {
+        color: #fff;
+        font-size: 13 / 3.20 + vw;
+        width: 290 / 3.20 + vw;
+        margin: 10vh auto 0 auto;
+    }
+
+    .partner--image {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20 / 3.20 + vw;
+        
+        img {
+            width: 50 / 3.20 + vw;
+            height: 50 / 3.20 + vw;            
+        }
+    }
+
+    .present {
+        margin: 10vh auto;
+    }
+
+    .presentation {
+        color: #FFF;
+        font-size: 26 / 3.20 + vw;
+        text-align: center;
+        width: 250 / 3.20 + vw; 
+        text-transform: uppercase;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .sidenav {
+        background-color: rgba($color: #2C2C2C, $alpha: .95);
+    }
+
+    .sidenav-trigger {
+        margin: 0 !important;
+    }
+
+    .toast {
+        background-color: $color--primary;
+    }
+
+    .visit {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 375px) {}
+@media screen and (min-width: 480px) {}
+@media screen and (min-width: 768px) {}
+@media screen and (min-width: 992px) {}
+@media screen and (min-width: 1200px) {}
