@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Menu from './Menu'
+import Menu from './parts/Menu'
 import { TimelineLite } from 'gsap/all'
 
 const iconsArray = [
@@ -28,10 +28,10 @@ export default class Home extends Component {
     componentDidMount() {
         this.logoTl
             .set(this.content, { autoAlpha: 1})
-            .from(this.head1, 0.5, { left: 100, autoAlpha: 0})
-            .from(this.head2, 0.5, { left: -100, autoAlpha: 0}, '0')
-            .from(this.head3, 0.5, { left: 100, autoAlpha: 0}, '0')
-            .from(this.button, 0.5, { left: -100, autoAlpha: 0}, '+=0.4')
+            .from(this.head1, 0.5, { left: 100, autoAlpha: 0}, '+=0.4')
+            .from(this.head2, 0.5, { left: -100, autoAlpha: 0}, '+=0')
+            .from(this.head3, 0.5, { left: 100, autoAlpha: 0}, '+=0')
+            .from(this.button, 0.5, { left: -320, autoAlpha: 0}, '+=0.4')
             .from(this.partners, 1, { left: 100, autoAlpha: 0}, '+=0.6')
             .staggerFrom(this.icons, 0.2, { scale: 0, autoAlpha: 0}, 0.1);
     }
