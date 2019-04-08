@@ -7,7 +7,7 @@ export default class Services extends Component {
             const elems = document.querySelectorAll('.carousel');
             M.Carousel.init(elems, {
                 indicators: true,
-                duration: 220
+                duration: 250
             });
         });     
     }
