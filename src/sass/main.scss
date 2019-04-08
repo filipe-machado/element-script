@@ -20,6 +20,37 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+.content {
+    height: 100%;
+    height: 100vh;
+    margin-left: 280px;
+}
+
+.inner {
+    position: fixed;
+    background-color: #f4f6f8;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+        left: 50%;
+        transform: translate(-50%, -50%);
+  }
+}
+
+.orange-text {
+    color: #F36416 !important;
+}
+
+.svg-container {
+    width: 50%;
+    height: 50%;
+}
+
 @media #{$small-and-down} {
     
     h1 {
@@ -30,11 +61,14 @@ h1, h2, h3, h4, h5, h6 {
         margin: 10vh auto;
     }
 
-    h2 {
+    h2, h6 {
         color: #FFF;
-        font-size: 22 / 3.20 + vw;
         text-align: center;
-        padding-top: 10vh;        
+        padding: 10vh;
+    }
+
+    h2 {
+        font-size: 22 / 3.20 + vw;
     }
 
     nav {
@@ -107,8 +141,15 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0;
     }
 
-    .links {
+    .carousel .indicators .indicator-item.active {
+        background-color: #F36416 !important;
+    }
 
+    .indicator-item {
+        background-color: rgba($color: #F36416, $alpha: .3) !important
+    }
+
+    .links {
         margin: 25vh auto;
         li {
             a {

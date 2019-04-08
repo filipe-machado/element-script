@@ -4,14 +4,14 @@
   "private": true,
   "dependencies": {
     "gsap": "^2.1.2",
+    "gsap-drawsvg": "^1.0.0",
     "jquery": "^3.3.1",
     "materialize-css": "^1.0.0",
     "node-sass": "^4.11.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-materialize": "^2.6.0",
-    "react-scripts": "2.1.8",
-    "semantic-ui-react": "^0.86.0"
+    "react-scripts": "2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
